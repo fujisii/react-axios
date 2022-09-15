@@ -1,10 +1,25 @@
 import "./styles.css";
 
+import axios from "axios";
+import React from "react";
+
+const baseURL = "urlを指定する";
+
 export default function App() {
+  const [post, setPost] = React.useState(null);
+
+  React.useEffect(() => {
+    axios.get(baseURL).then((response) => {
+      setPost(response.data);
+    });
+  }, []);
+
+  if (!post) return null;
+
   return (
-    <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
+    <div>
+      <h1>{post.title}</h1>
+      <p>{post.body}</p>
     </div>
   );
 }
