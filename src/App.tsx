@@ -4,6 +4,7 @@ import AxiosPost from "./axios/post";
 import AxiosPut from "./axios/put";
 import AxiosDelete from "./axios/delete";
 import AxiosError from "./axios/error";
+import AxiosClient from "./axios/client";
 
 export default function App() {
   return (
@@ -13,7 +14,8 @@ export default function App() {
       {/* <AxiosPost /> */}
       {/* <AxiosPut /> */}
       {/* <AxiosDelete /> */}
-      <AxiosError />
+      {/* <AxiosError /> */}
+      <AxiosClient />
     </div>
   );
 }
