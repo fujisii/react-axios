@@ -4,7 +4,8 @@ import AxiosPost from "./axios/post";
 import AxiosPut from "./axios/put";
 import AxiosDelete from "./axios/delete";
 import AxiosError from "./axios/error";
-import AxiosClient from "./axios/client";
+// import AxiosClient from "./axios/client";
+import AxiosAsyncawait from "./axios/asyncawait";
 
 export default function App() {
   return (
@@ -15,7 +16,8 @@ export default function App() {
       {/* <AxiosPut /> */}
       {/* <AxiosDelete /> */}
       {/* <AxiosError /> */}
-      <AxiosClient />
+      {/* <AxiosClient /> */}
+      <AxiosAsyncawait />
     </div>
   );
 }
