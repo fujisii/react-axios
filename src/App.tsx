@@ -1,11 +1,12 @@
 import "./styles.css";
 
-import AxiosPost from "./axios/post";
-import AxiosPut from "./axios/put";
-import AxiosDelete from "./axios/delete";
-import AxiosError from "./axios/error";
+// import AxiosPost from "./axios/post";
+// import AxiosPut from "./axios/put";
+// import AxiosDelete from "./axios/delete";
+// import AxiosError from "./axios/error";
 // import AxiosClient from "./axios/client";
-import AxiosAsyncawait from "./axios/asyncawait";
+// import AxiosAsyncawait from "./axios/asyncawait";
+import AxiosCustomhooks from "./axios/customhooks";
 
 export default function App() {
   return (
@@ -17,7 +18,8 @@ export default function App() {
       {/* <AxiosDelete /> */}
       {/* <AxiosError /> */}
       {/* <AxiosClient /> */}
-      <AxiosAsyncawait />
+      {/* <AxiosAsyncawait /> */}
+      <AxiosCustomhooks />
     </div>
   );
 }
